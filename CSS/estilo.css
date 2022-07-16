@@ -1,0 +1,141 @@
+@charset "UTF-8";
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+html {
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.principal {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cream);
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  border-radius: 11px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 620px;
+  height: 470px;
+}
+
+.contenedor-header__imagen {
+  width: 301px;
+  height: 470px;
+}
+
+.contenedor-datos {
+  background-color: white;
+  padding: 30px;
+}
+
+.contenedor-datos__perfume {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.2rem;
+  color: var(--dark-grayish-blue);
+}
+
+.contenedor-datos__titulo {
+  font-family: "Fraunces", serif;
+  line-height: 33px;
+}
+
+.contenedor-datos__description {
+  font-size: 1rem;
+  color: var(--dark-grayish-blue);
+  line-height: 22px;
+}
+
+.precio {
+  display: flex;
+  align-items: center;
+  margin-top: 33px;
+}
+
+.precio-grande {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  color: var(--dark-cyan);
+}
+
+.precio-pequeño {
+  font-size: 0.8rem;
+  text-decoration: line-through;
+  color: var(--dark-grayish-blue);
+  margin-left: 21px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-boton {
+  display: flex;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-cyan);
+  border-radius: 10px;
+  border: 0;
+  width: 100%;
+  height: 51px;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  .contenedor {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+  }
+  .contenedor-header {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    font-size: 0;
+  }
+  .contenedor-header__imagen {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}/*# sourceMappingURL=estilo.css.map */
